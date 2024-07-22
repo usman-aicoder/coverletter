@@ -20,8 +20,8 @@ else:
     st.sidebar.error("API Key not found in environment variables")
 
 # Set up OpenAI client
-client = OpenAI(api_key=api_key)
-#client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+#client = OpenAI(api_key=api_key)
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def extract_job_description(url):
     headers = {
